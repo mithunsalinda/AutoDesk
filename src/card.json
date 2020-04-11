@@ -1,0 +1,44 @@
+
+[
+      {
+        "title":"Authentication", 
+        "description":"Generate tokens based on the OAuth 2.0 Standard to authenticate requests made to forge APIs and SDKS.",
+        "intro":"",
+        "guid":"Developers guide",
+        "ref":"API reference"
+    },
+      {
+          "title":"BIM 360", 
+          "description":"Integrate with Autodesk BIM 360 platform to extend its capabilities to reach segments of the construction  ecosystem that don’t have  direct access to BIM cards.",
+            "intro":"Intro",
+            "guid":"Developers guide",
+            "ref":"API reference"
+        },
+      {
+          "title":"Data Management", 
+          "description":"Access data across BIM team, Fusion Team BIM 360 Docs, and the Object storage Service to build apps to display and extend your data in ways that add value to your users.",
+          "intro":"Intro",
+        "guid":"Developers guide",
+        "ref":"API reference"},
+      {
+          "title":"Design Automation", 
+          "description":"Automate repetitive tasks by leveraging on the scale of the forge platform and running scripts on your design files in the cloud",
+          "intro":"intro",
+        "guid":"Developers guide",
+        "ref":"API reference"
+    },
+      {
+          "title":"Model Derivative", 
+          "description":"Derive outputs viewable by the forge viewer from more than 60 CAD file formats and extract metadata about the models as well-as the individual objects within the model",
+          "intro":"intro",
+        "guid":"Developers guide",
+        "ref":"API reference"
+    },
+      {
+          "title":"Reality Capture", 
+          "description":"Convert  Digital images high resolution textured meshes, dense point clouds and orthophotos.",
+          "intro":"Intro",
+        "guid":"Developers guide",
+        "ref":"API reference"
+      }
+]

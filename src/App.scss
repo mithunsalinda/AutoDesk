@@ -1,0 +1,240 @@
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/code";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/input-group";
+@import "~bootstrap/scss/custom-forms";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/breadcrumb";
+//@import "~bootstrap/scss/pagination";
+//@import "~bootstrap/scss/badge";
+//@import "~bootstrap/scss/jumbotron";
+//@import "~bootstrap/scss/alert";
+//@import "~bootstrap/scss/progress";
+@import "~bootstrap/scss/media";
+@import "~bootstrap/scss/list-group";
+@import "~bootstrap/scss/close";
+// @import "~bootstrap/scss/oasts";
+//@import "~bootstrap/scss/modal";
+//@import "~bootstrap/scss/tooltip";
+//@import "~bootstrap/scss/popover";
+//@import "~bootstrap/scss/carousel";
+//@import "~bootstrap/scss/spinners";
+@import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/print";
+
+/**FONT AWESOME**/
+
+@import "~font-awesome/scss/variables";
+@import "~font-awesome/scss/mixins";
+@import "~font-awesome/scss/path";
+@import "~font-awesome/scss/core";
+@import "~font-awesome/scss/larger";
+@import "~font-awesome/scss/fixed-width";
+@import "~font-awesome/scss/list";
+@import "~font-awesome/scss/bordered-pulled";
+@import "~font-awesome/scss/animated";
+@import "~font-awesome/scss/rotated-flipped";
+@import "~font-awesome/scss/stacked";
+@import "~font-awesome/scss/icons";
+@import "~font-awesome/scss/screen-reader";
+/**END*/
+
+$primaryColor: #f2f2f2;
+$textColor:#FFF;
+@media (min-width: 768px) {
+
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+body {
+  background-color: $primaryColor;
+  text-align: left;
+}
+
+/******************************
+****CUSTOM SCSS FOR AUTODESK***
+******************************/
+.headerText {
+  text-transform: uppercase;
+  display: block;
+  padding: 50px 0;
+  background-color: #1083ce;;
+  text-align: left;
+  color: $textColor;
+}
+h2 {
+  &.heading2 {
+    font-size: 1.2em;
+    text-align: left;
+    padding: 2em 0 .5em 0;
+  }
+}
+h4 {
+  &.heading4 {
+    font-size:0.8em;
+    text-align: left;
+  }
+}
+.card-wrapper {
+  .card {
+    padding :1em;
+    height: 100%;
+    .des {
+      min-height: 126px;
+    }
+    .linkBox {
+      display: flex;
+      &.authentication {
+        margin-top: 35px;
+      }
+      a.useLinks {
+        display: block;
+        padding: .3em 1em;
+        text-align: left;
+        color: #000;
+        text-decoration: none;
+        i.fa {
+          float: right;
+          color: #ccc;
+        }
+        &:hover {
+          background-color: #1083ce;
+          color: #FFF;
+        }
+        &.authentication:nth-child(1) {
+          display: none;
+        }
+        &:nth-child(1) {
+          border-bottom: 1px solid #CCC;
+        }
+        &:nth-child(2) {
+          border-bottom: 1px solid #CCC;
+        }
+      }
+    }
+    &:hover {
+      box-shadow: 0px 10px 9px 2px rgba(0, 0, 0, 0.15);
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}
+.curtain{
+  position: absolute;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    
+}
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: #fff;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0;
+}
+.fa {
+  &.icon-authentication:before {
+    content: '\f207' !important;
+  }
+  &.icon-bim360:before {
+    content: '\f013' !important;
+  }
+  &.icon-datamanagement:before {
+    content: '\f1b3' !important;
+  }
+  &.icon-designautomation:before {
+    content: '\f1a9' !important;
+  }
+  &.icon-modelderivative:before {
+    content: '\f0fb' !important;
+  }
+  &.icon-realitycapture:before {
+    content: '\f1da' !important;
+  }
+}
+@keyframes lds-facebook {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+  50%, 100% {
+    top: 24px;
+    height: 32px;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.headertext {
+  font-size:2em;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
